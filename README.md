@@ -1,21 +1,20 @@
 # AluraGeek
 
-Bem-vindo ao projeto AluraGeek! Este é um exemplo de aplicação de e-commerce desenvolvida como parte do curso da Alura. O objetivo deste projeto é demonstrar a criação de um frontend interativo utilizando HTML, CSS e JavaScript, com simulação de backend utilizando JSON Server.
+Bem-vindo ao projeto AluraGeek, uma aplicação de e-commerce desenvolvida durante o curso da Alura e com suporte do programa Oracle ONE. Este projeto serve como uma demonstração prática de desenvolvimento frontend usando tecnologias web modernas e simulação de backend.
 
 ## Funcionalidades
 
-- Listagem de produtos dinamicamente.
-- Adição de novos produtos através de um formulário.
-- Exclusão de produtos listados.
-- Validação de URL de imagem e formatação de preço.
-- Layout responsivo para diferentes tamanhos de tela.
+- Listagem dinâmica de produtos.
+- Adição e exclusão de produtos via interface de usuário.
+- Validação de URLs de imagem e formatação automática de preços.
+- Interface responsiva, adaptável para diferentes dispositivos e tamanhos de tela.
 
 ## Tecnologias Utilizadas
 
 - HTML5
 - CSS3
 - JavaScript (ES6+)
-- JSON Server
+- JSON Server para simulação de API REST
 
 ## Como Utilizar
 
@@ -27,74 +26,35 @@ Bem-vindo ao projeto AluraGeek! Este é um exemplo de aplicação de e-commerce 
 ### Instalação
 
 1. Clone o repositório:
-
-```bash
-git clone https://github.com/victorgomesl/alurageek.git
-```
-
-2. Navegue até o diretório do projeto:
-
-```bash
-cd alurageek
-```
-
+   git clone https://github.com/victorgomesl/alurageek.git
+2. Acesse o diretório do projeto:
+   cd alurageek
 3. Instale as dependências:
+   npm install
 
-```bash
-npm install
-```
+### Execução
 
-### Iniciando o Servidor
-
-1. Inicie o JSON Server:
-
-```bash
-json-server --watch db.json
-```
-
-2. Abra o arquivo index.html em seu navegador.
-
-```bash
-json-server --watch db.json
-```
+1. Inicie o JSON Server para simular a API:
+   json-server --watch db.json
+2. Abra o index.html em seu navegador para acessar a aplicação.
 
 ## Estrutura do Projeto
 
-- index.html: Arquivo principal da aplicação.
-- css/style.css: Arquivo de estilos CSS.
-- js/products.js: Lógica de manipulação de produtos.
-- db.json: Simulação de backend com JSON Server.
+- index.html: Página principal.
+- css/style.css: Estilos da aplicação.
+- js/products.js: Script para manipulação dos produtos.
+- db.json: Banco de dados fake utilizado pelo JSON Server.
 
-### Requisições
+## Requisições
 
-GET
-Obtém a lista de produtos:
-
-```bash
-const products = await getProducts();
-```
-
-POST
-Adiciona um novo produto.
-
-```bash
-const newProduct = {
-    name: "Nome do Produto",
-    price: "100,00",
-    image: "url_da_imagem"
-};
-await addProduct(newProduct);
-```
-
-DELETE
-Remove um produto pelo ID.
-
-```bash
-await deleteProduct(id);
-```
+- GET: Obtém produtos.
+- POST: Adiciona um novo produto.
+- DELETE: Remove um produto.
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
+Este projeto está sob a Licença MIT, veja o arquivo LICENSE para mais detalhes.
 
-Feito com ❤️ por victorgomesl
+---
+
+Desenvolvido com ❤️ por victorgomesl para Alura e Oracle ONE.
