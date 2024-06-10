@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/image.png" alt="Logotipo AluraGeek">
+            <h1>AluraGeek</h1>
+        </div>
+    </header>    
+    <main>
+        <section class="products-section">
+            <h2 class="section-title">MEUS PRODUTOS:</h2>
+            <div class="product-container">
+                <!-- Os produtos serão carregados aqui -->
+            </div>
+        </section>
+        <section class="add-product-section">
+            <h2 class="add-product-title">ADICIONAR PRODUTO:</h2>
+            <form>
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="nome..." required>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="price" placeholder="valor..." required>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="image" placeholder="url da imagem..." required>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="btn save">Guardar</button>
+                    <button type="reset" class="btn clear">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo-container">
+            <div class="footer-logo-content">
+                <img src="assets/image.png" alt="Logotipo AluraGeek">
+                <h1>AluraGeek</h1>
+            </div>
+            <p>Desenvolvido por <a href="https://github.com/victorgomesl" target="_blank">victorgomesl</a><br>Alura Latam - 2024</p>
+        </div>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
